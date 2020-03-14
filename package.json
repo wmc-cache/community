@@ -1,27 +1,25 @@
 {
-  "name": "community",
+  "name": "zhihu-api",
   "version": "1.0.0",
-  "description": "COMMUNITY API",
+  "description": " RESTful API",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app",
-    "dev": "nodemon app"
+    "start": "NODE_ENV=production  nodemon app"
   },
-  "author": "wmc",
-  "license": "MIT",
+  "author": "wu",
+  "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "jsonwebtoken": "^8.5.1",
-    "koa": "^2.7.0",
-    "koa-body": "^4.1.0",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
     "koa-json-error": "^3.1.2",
-    "koa-jwt": "^3.5.1",
+    "koa-jwt": "^3.6.0",
     "koa-parameter": "^3.0.1",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
-    "mongoose": "^5.4.20"
-  },
-  "devDependencies": {
-    "cross-env": "^5.2.0",
-    "nodemon": "^1.18.10"
+    "koa2-cors": "^2.0.6",
+    "mongoose": "^5.7.7",
+    "nodemon": "^1.19.4"
   }
 }
