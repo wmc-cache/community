@@ -1,4 +1,8 @@
-module.exports = {
-  secret: 'zhihu-jwt-secret',
-  connectionStr: 'mongodb+srv://lewis:mukewang@zhihu-kag3y.mongodb.net/test?retryWrites=true',
-};
+module.exports ={
+secret: 'zhihu-jwt-secret',
+connectionStr:"mongodb://localhost:27017",
+
+};   
+
+
+
