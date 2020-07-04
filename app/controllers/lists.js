@@ -22,7 +22,7 @@ class ListsCtl {
   }
   async create(ctx) {
     ctx.verifyParams({
-      id: { type: "number", required: true },
+      id: { type: "string", required: true },
       title: { type: "string", required: true },
     });
     const list = await new List(ctx.request.body).save();
