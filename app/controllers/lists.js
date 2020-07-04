@@ -29,9 +29,7 @@ class ListsCtl {
     ctx.body = list;
   }
   async update(ctx) {
-    ctx.verifyParams({
-      title: { type: "string", required: true },
-    });
+
     const list = await List.findByIdAndUpdate(ctx.params.id, ctx.request.body);
     ctx.body = list;
   }
