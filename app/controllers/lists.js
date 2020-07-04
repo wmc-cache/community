@@ -35,6 +35,11 @@ class ListsCtl {
     const list = await List.findByIdAndUpdate(ctx.params.id, ctx.request.body);
     ctx.body = list;
   }
+
+  async delete(ctx) {
+    await List.findByIdAndRemove(ctx.params.id);
+    ctx.status = 204;
+  }
 }
 
 module.exports = new ListsCtl();
